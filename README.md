@@ -16,9 +16,13 @@ I thought that it would be cool to make a blog post programmatically to a github
 
 Then I thought, this could make a cool Library so I can use it to make cool stuff with Amazon AWS Lambda.
 
-And also, more commits means it looks nicer in your github profile.
+And also, more commits means it looks nicer in your github profile now that things are supposed to be a lot more social. After all, it's a tool for developers to showcase what they are working on right?
 
 ![Github Contributions](https://raw.githubusercontent.com/nolim1t/why_i_love_github/master/github_contrib.png)
+
+vs
+
+![Sadface](https://raw.githubusercontent.com/nolim1t/why_i_love_github/master/nocontrib.png)
 
 ## Usage
 
