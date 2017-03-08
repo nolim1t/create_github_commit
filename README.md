@@ -14,7 +14,11 @@ But GitHub is not just a git hosting platform but also has a lot of cool stuff (
 
 I thought that it would be cool to make a blog post programmatically to a github hosted page (or one of my static sites)
 
-Then I thought, this could make a cool Library so I can use it to make cool stuff with Amazon AWS Lambda
+Then I thought, this could make a cool Library so I can use it to make cool stuff with Amazon AWS Lambda.
+
+And also, more commits means it looks nicer in your github profile.
+
+![Github Contributions](https://raw.githubusercontent.com/nolim1t/why_i_love_github/master/github_contrib.png)
 
 ## Usage
 
