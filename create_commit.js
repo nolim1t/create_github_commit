@@ -45,6 +45,9 @@ module.exports = function(info, callback) {
   if (info.fileobject !== undefined) {
     var github_filename = info.fileobject['filename'] || 'test.md';
     var github_file_contents = info.fileobject['contents'] || "# Hello World\n\n## Title 1\n\nI love github. It's cool because I can create files using the API";
+    if (info.fileobject['encoded'] == undefined) { // if encoded is not set then encode it
+      github_file_contents = new Buffer(github_file_contents).toString('base64')
+    }
     var file_mode = info.fileobject['filemode'] || '100644';
     var git_commit_message = info.fileobject['commit_message'] || 'Lets make a change now!';
     var author_block = info.fileobject['commit_author'] || {"name": "nolim1t", "email": "github-commit@nolim1t.co", "date": ISODateString(new Date())};
@@ -66,7 +69,7 @@ module.exports = function(info, callback) {
                   requestObjParams['uri'] = url_prefix + "blobs";
                   requestObjParams['method'] = 'POST';
                   requestObjParams['body'] = JSON.stringify({
-                    "content": new Buffer(github_file_contents).toString('base64'),
+                    "content": github_file_contents,
                     "encoding": "base64"
                   });
                   requestObjParams['headers']['content-type'] = 'application/json';
