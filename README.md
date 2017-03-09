@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/create_github_commit.svg)](https://badge.fury.io/js/create_github_commit)
+
 # Create Github Commit Library
 
 Package site: [https://www.npmjs.com/package/create_github_commit](https://www.npmjs.com/package/create_github_commit)
