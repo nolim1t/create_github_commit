@@ -52,10 +52,20 @@ require('create_github_commit').create_commit({apikey: "githubpersonalapikey", g
 
 #### Images!
 
-You can even do an image (must exist locally)
+You can even do an image
+
+##### Stored Locally
 
 ```javascript
 require('create_github_commit').image_commit({githubrepo: "why_i_love_github", fileobject: {filename: "example.png", commit_message: "1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
+```
+
+##### Stored on a remote server
+
+Fetches the image and stores it on github. This is useful for backing up images from an S3 bucket.
+
+```javascript
+require('create_github_commit').image_commit({apikey: "APIKEY", githubrepo: "why_i_love_github", githubuser: "username", fileobject: {filename: "http://howtodoge.com/images/dogen.png", file_is_url: true, filename_to_store: "much_doge_wow.png", commit_message: "1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
 ```
 
 ## TODO
