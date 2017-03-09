@@ -1,0 +1,27 @@
+{
+  "name": "create_github_commit",
+  "version": "1.0.0",
+  "description": "Library that makes a github commit to a defined repository programmatically",
+  "main": "create_commit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolim1t/create_github_commit.git"
+  },
+  "keywords": [
+    "github",
+    "library",
+    "node.js"
+  ],
+  "author": "BT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nolim1t/create_github_commit/issues"
+  },
+  "homepage": "https://github.com/nolim1t/create_github_commit#readme",
+  "dependencies": {
+    "request": "^2.80.0"
+  }
+}
