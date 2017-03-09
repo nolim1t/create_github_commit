@@ -38,13 +38,16 @@ npm install create_github_commit --save
 #### Just basic parameters
 
 ```javascript
-create_commit({fileobject: {filename: "im_a_little_teapot.md", contents: "# I'm a little teapot\n\nYet another change\n\n![Teapot yo](https://images-na.ssl-images-amazon.com/images/I/51GHlyuQ1JL._SL1200_.jpg)", commit_message: "For a good time, send bitcoins to 1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
+require('create_github_commit').create_commit({fileobject: {filename: "im_a_little_teapot.md", contents: "# I'm a little teapot\n\nYet another change\n\n![Teapot yo](https://images-na.ssl-images-amazon.com/images/I/51GHlyuQ1JL._SL1200_.jpg)", commit_message: "For a good time, send bitcoins to 1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
+
+require('create_github_commit').create_commit({fileobject: {filename: "README.md", contents: "# Why I love Github\n\n* It is pretty\n\n* It is easy to edit files\n\n* It is pretty easy to edit files\n\n* I don't even need a GIT Client to edit this\n\n* In fact I'm editing this using the git data API\n\n* It does a cool dance\n\n![Github Style!](https://octodex.github.com/images/gangnamtocat.png)", commit_message: "For a good time, send bitcoins to 1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
+
 ```
 
 #### Specify API Key username and repo in parameters too
 
 ```javascript
-create_commit({apikey: "githubpersonalapikey", githubuser: "githubuser", githubrepo: "githubreponame", fileobject: {filename: "im_a_little_teapot.md", contents: "# I'm a little teapot\n\nYet another change\n\n![Teapot yo](https://images-na.ssl-images-amazon.com/images/I/51GHlyuQ1JL._SL1200_.jpg)", commit_message: "For a good time, send bitcoins to 1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
+require('create_github_commit').create_commit({apikey: "githubpersonalapikey", githubuser: "githubuser", githubrepo: "githubreponame", fileobject: {filename: "im_a_little_teapot.md", contents: "# I'm a little teapot\n\nYet another change\n\n![Teapot yo](https://images-na.ssl-images-amazon.com/images/I/51GHlyuQ1JL._SL1200_.jpg)", commit_message: "For a good time, send bitcoins to 1Mdnjtg9CFidwxWRHjaPamfDmTJVtg4nri"}}, function(c) {console.log(c);});
 ```
 
 ## TODO
